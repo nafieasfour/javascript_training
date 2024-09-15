@@ -1,0 +1,120 @@
+/* Center body content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid black;
+  border-radius: 50%;
+  position: relative;
+  background: white;
+}
+
+/* Style the clock hands */
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(90deg);
+  border-radius: 6px;
+}
+
+/* Hour hand styling */
+.hour-hand {
+  width: 8px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+}
+
+/* Minute hand styling */
+.minute-hand {
+  width: 4px;
+  height: 110px;
+  background: black;
+  z-index: 2;
+}
+
+/* Second hand styling */
+.second-hand {
+  width: 2px;
+  height: 130px;
+  background: red;
+  z-index: 1;
+}
+
+/* Center dot */
+.center-dot {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.number {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.number1 {
+  top: 10%;
+  left: 75%;
+}
+.number2 {
+  top: 25%;
+  left: 85%;
+}
+.number3 {
+  top: 50%;
+  left: 90%;
+}
+.number4 {
+  top: 70%;
+  left: 85%;
+}
+.number5 {
+  top: 85%;
+  left: 70%;
+}
+.number6 {
+  top: 90%;
+  left: 50%;
+}
+.number7 {
+  top: 85%;
+  left: 30%;
+}
+.number8 {
+  top: 70%;
+  left: 10%;
+}
+.number9 {
+  top: 50%;
+  left: 3%;
+}
+.number10 {
+  top: 25%;
+  left: 10%;
+}
+.number11 {
+  top: 10%;
+  left: 20%;
+}
+.number12 {
+  top: 0%;
+  left: 50%;
+}
